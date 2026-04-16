@@ -1,0 +1,11 @@
+datasets<2.20
+huggingface-hub
+pandas
+numpy
+torch
+spacy
+sentence-transformers
+transformers
+scikit-learn
+wordfreq
+tqdm

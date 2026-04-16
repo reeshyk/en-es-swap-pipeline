@@ -1,0 +1,27 @@
+# Data files — too large for git; regenerate with main.py
+data/
+*.parquet
+*.pkl
+
+# MUSE dictionary downloads
+*.txt
+!requirements.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# HuggingFace model cache
+.cache/
+
+# Jupyter / Colab artifacts
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
