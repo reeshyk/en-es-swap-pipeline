@@ -7,9 +7,9 @@ def mount_drive():
     os.makedirs(DRIVE_BASE, exist_ok=True)
     if IS_COLAB:
         from google.colab import drive
-        if not os.path.exists("/content/drive/MyDrive"):
+        try:
             drive.mount("/content/drive")
-        else:
+        except ValueError:
             print("Drive already mounted.")
     else:
         print(f"Local mode: data directory is '{DRIVE_BASE}'")
