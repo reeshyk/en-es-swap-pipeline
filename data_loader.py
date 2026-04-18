@@ -8,7 +8,7 @@ def mount_drive():
     if IS_COLAB:
         from google.colab import drive
         try:
-            drive.mount("/content/drive")
+            drive.mount("/content/drive", force_remount=True)
         except ValueError as e:
             print(f"Drive mount warning: {e}")
     else:
