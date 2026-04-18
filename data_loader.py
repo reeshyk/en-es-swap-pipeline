@@ -9,8 +9,8 @@ def mount_drive():
         from google.colab import drive
         try:
             drive.mount("/content/drive")
-        except ValueError:
-            print("Drive already mounted.")
+        except ValueError as e:
+            print(f"Drive mount warning: {e}")
     else:
         print(f"Local mode: data directory is '{DRIVE_BASE}'")
 
